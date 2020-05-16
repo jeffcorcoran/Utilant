@@ -1,0 +1,21 @@
+﻿<div>
+    <h2 id="albumTitle">
+        {{Title}}
+    </h2>
+    {{#if Photos.length}}
+    <img src="{{Photos.0.ThumbnailUrl}}" title="{{Photos.0.Title}}" />
+    {{/if}}
+    <span class="vcard">
+        <a id="username" class="url fn">{{AlbumOwner.Name}} &gt;</a> <br />
+        <a id="posts">View Posts &gt;</a><br />
+        <a class="email" href="mailto:{{AlbumOwner.Email}}">{{AlbumOwner.Email}}</a> <br />
+        <a class="tel" href="tel:{{AlbumOwner.PhoneNumber}}">{{AlbumOwner.PhoneNumber}}</a><br />
+        <span class="street-address">
+            {{AlbumOwner.HomeAddress.Street}}<br />
+            {{#if AlbumOwner.HomeAddress.Suite}}
+            {{AlbumOwner.HomeAddress.Suite}} <br />
+            {{/if}}
+        </span>
+        <span class="locality">{{AlbumOwner.HomeAddress.City}}</span>, <span class="postal-code">{{AlbumOwner.HomeAddress.ZipCode}}</span>
+    </span>
+</div>

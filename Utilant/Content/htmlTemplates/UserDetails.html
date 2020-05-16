@@ -1,0 +1,18 @@
+﻿<div class="vcard">
+    <strong class="fn">{{Name}}</strong> <span class="nickname">({{Username}})</span> <br />
+    <a class="email" href="mailto:{{Email}}">{{Email}}</a> <br />
+    <a class="tel" href="tel:{{PhoneNumber}}">{{PhoneNumber}}</a><br />
+    <span class="org">{{UserCompany.Name}}</span><br />
+    <span>{{UserCompany.CatchPhrase}}</span> - <em>{UserCompany.Bs}}</em> <br />
+    <div class="adr">
+        <span class="street-address">
+            {{HomeAddress.Street}}<br />
+            {{#if HomeAddress.Suite}}
+            {{HomeAddress.Suite}} <br />
+            {{/if}}
+        </span>
+    </div>
+    <span class="locality">{{HomeAddress.City}}</span>, <span class="postal-code">{{HomeAddress.Zipcode}}</span> <br />
+    <a href="https://www.google.com/maps/search/?api=1&query={{HomeAddress.Geo.Lat}},{{HomeAddress.Geo.Lng}}">Map ({{HomeAddress.Geo.Lat}}, {{HomeAddress.Geo.Lng}})</a><br />
+    <a href="http://{{Website}}" class="url">{{Website}}</a>
+</div>

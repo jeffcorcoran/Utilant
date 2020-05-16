@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="/Scripts/Album.js"></script>
+<script language="javascript">
+    $(document).ready(function ()
+    {
+        let pagerAlbum = new Album();
+
+        pagerAlbum.Init();
+        $('#postList').accordion();
+    });
+</script>
+
+<fieldset id="searchBar">
+    <legend>Search</legend>
+    <input type="text" class="searchBox" data-param="userName" name="searchByName" id="searchByName" placeholder="Search By Name" />
+    <input type="text" class="searchBox" data-param="title" name="searchByTitle" id="searchByTitle" placeholder="Search By Title" />
+</fieldset>
+
+<div id="pagerPlatform">
+    <div id="main">
+
+    </div>
+</div>
+<div id="albumPhotos"></div>
+<div id="dialog" title="User Details"></div>

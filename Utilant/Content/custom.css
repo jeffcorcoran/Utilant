@@ -1,0 +1,122 @@
+﻿#ct {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.cell {
+    height: 300px;
+    overflow-y: auto;
+    width: 30%;
+    margin: 1%;
+    position: relative;
+}
+
+    .cell h2 {
+        font-size: 24px;
+        display: block;
+    }
+
+    .cell img {
+        float: left;
+        margin: 0px 5px 5px 0px;
+    }
+
+    .cell .details {
+        clear: both;
+        text-align: center;
+    }
+
+        .cell .details a {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+            background-color: #333333;
+            color: #FFFFFF;
+            display: block;
+        }
+
+            .cell .details a:hover {
+                background-color: #AAAAAA;
+            }
+
+.error {
+    color: #FF0000;
+}
+
+/***JQUERY***/
+
+#main img {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+h2#albumTitle, a#username, a#posts {
+    cursor: pointer;
+}
+
+#albumPhotos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+    #albumPhotos .photo {
+        flex: 1;
+    }
+
+#pagerPlatform {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+    #pagerPlatform #previousAlbum, #pagerPlatform #nextAlbum {
+        flex: 1;
+        max-width: 120px;
+        height: 60px;
+        font-size: 50px;
+        padding: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+        #pagerPlatform #previousAlbum:hover, #pagerPlatform #nextAlbum:hover {
+            color: #0000FF;
+        }
+
+    #pagerPlatform #nextAlbum {
+        text-align: right;
+    }
+
+    #pagerPlatform #main {
+        flex: 1;
+        margin: 20px;
+    }
+
+#searchBar {
+    display: block;
+    width: 100%;
+}
+
+#skrim {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25% 0px;
+    background: url(https://www.drupal.org/files/issues/throbber_13.gif) center center no-repeat rgba(0,0,0,.8);
+}
+
+body.loadSkrim {
+    overflow: hidden;
+}
+
+    body.loadSkrim #skrim {
+        display: block;
+    }
