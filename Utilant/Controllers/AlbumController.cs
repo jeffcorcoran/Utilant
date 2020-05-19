@@ -69,14 +69,7 @@ namespace Utilant.Controllers
                 matches.AddRange(_albums.Where(x => userMatches.Contains(x.UserId)));
             }
 
-            return Json(matches.Select(x => x.Id).Distinct().ToList());
-        }
-
-        // GET: Album/Details/5
-        public ActionResult Details(int id)
-        {
-            var album = Newtonsoft.Json.JsonConvert.DeserializeObject<Album>(new WebClient().DownloadString($"{ConnectionStrings.JSON_REPO}/albums/{id}"));
-            return View(album);
+            return Json(matches.Select(x => x.Id).Distinct().ToList(), JsonRequestBehavior.AllowGet);
         }
     }
 }

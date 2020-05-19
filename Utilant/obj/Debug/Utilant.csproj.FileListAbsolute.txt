@@ -76,3 +76,4 @@ C:\Users\jeffc\source\repos\Utilant\Utilant\obj\Debug\Utilant.csproj.CoreCompile
 C:\Users\jeffc\source\repos\Utilant\Utilant\obj\Debug\Utilant.csproj.CopyComplete
 C:\Users\jeffc\source\repos\Utilant\Utilant\obj\Debug\Utilant.dll
 C:\Users\jeffc\source\repos\Utilant\Utilant\obj\Debug\Utilant.pdb
+C:\Users\jeffc\source\repos\Utilant\Utilant\obj\Debug\Utilant.csprojAssemblyReference.cache

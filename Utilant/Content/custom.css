@@ -110,7 +110,7 @@ h2#albumTitle, a#username, a#posts {
     color: #FFFFFF;
     text-align: center;
     padding: 25% 0px;
-    background: url(https://www.drupal.org/files/issues/throbber_13.gif) center center no-repeat rgba(0,0,0,.8);
+    background: url(https://www.drupal.org/files/issues/throbber_13.gif) center 25% no-repeat rgba(0,0,0,.8);
 }
 
 body.loadSkrim {

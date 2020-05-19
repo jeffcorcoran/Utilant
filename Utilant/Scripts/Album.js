@@ -166,11 +166,11 @@
     {
         if (me._searchResults.length == 0)
         {
-            me._PullAlbum(me._activeAlbum.id - 1);
+            me._PullAlbum(me._activeAlbum.Id - 1);
         }
         else
         {
-            let idx = me._searchResults.indexOf(me._activeAlbum.id);
+            let idx = me._searchResults.indexOf(me._activeAlbum.Id);
             idx--;
             idx = (idx < 0) ? me._searchResults.length - 1 : idx;
             console.log(idx);
@@ -182,11 +182,11 @@
     {
         if (me._searchResults.length == 0)
         {
-            me._PullAlbum(me._activeAlbum.id + 1);
+            me._PullAlbum(me._activeAlbum.Id + 1);
         }
         else
         {
-            let idx = me._searchResults.indexOf(me._activeAlbum.id);
+            let idx = me._searchResults.indexOf(me._activeAlbum.Id);
             idx++;
             idx = (idx > me._searchResults.length - 1) ? 0 : idx;
             me._PullAlbum(me._searchResults[idx]);
